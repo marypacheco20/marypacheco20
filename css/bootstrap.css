@@ -3070,18 +3070,18 @@ textarea.form-control-lg {
 
 .btn-success {
   color: #fff;
-  background-color: #BAA4CF;
-  border-color: #BAA4CF;
+  background-color: #384b0f;
+  border-color: #384b0f;
 }
 .btn-success:hover {
   color: #fff;
-  background-color: #9a89ab;
-  border-color: #9a89ab;
+  background-color: #88a151;
+  border-color: #88a151;
 }
 .btn-check:focus + .btn-success, .btn-success:focus {
   color: #fff;
-  background-color: #9a89ab;
-  border-color: #9a89ab;
+  background-color: #88a151;
+  border-color: #88a151;
   box-shadow: 0 0 0 0.25rem rgba(60, 153, 110, 0.5);
 }
 .btn-check:checked + .btn-success, .btn-check:active + .btn-success, .btn-success:active, .btn-success.active, .show > .btn-success.dropdown-toggle {
@@ -3979,7 +3979,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: rgb(58, 236, 14);
-  background-color: #7e3f1a !important;
+  background-color: #dd621a !important;
 }
 
 .nav-fill > .nav-link,
@@ -3994,11 +3994,7 @@ textarea.form-control-lg {
   border: 1.8px solid #BAA4CF;
   color: #BAA4CF; }
 
-/* .menu li a:hover {
-  color: #ffffff;
-  background: linear-gradient(45deg, #BAA4CF, #DED7E1); }
 
- */
 .nav-justified > .nav-link,
 .nav-justified .nav-item {
   flex-basis: 0;
@@ -4008,9 +4004,7 @@ textarea.form-control-lg {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-radius: 20px;
-  border: 1.8px solid #BAA4CF;
-  color: #BAA4CF; 
+    font-family: 'Goudy Bookletter 1911', serif;
 }
 
 .nav-fill .nav-item .nav-link,
@@ -4034,7 +4028,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: #FFF;
+  background-color: #eef4e8;
 
 }
 .navbar > .container,
@@ -4080,7 +4074,7 @@ textarea.form-control-lg {
 
 
 .navbar-nav:hover .nav-link:hover {
-  color: #BAA4CF !important; 
+  color: #88a151 !important; 
 
 }
 .navbar-nav .dropdown-menu {
@@ -4134,9 +4128,6 @@ textarea.form-control-lg {
 .navbar-nav-scroll {
   max-height: var(--bs-scroll-height, 75vh);
   overflow-y: auto;
-}
-.menu-activo{
-  color: #BAA4CF !important;
 }
 
 @media (min-width: 576px) {
@@ -4252,7 +4243,7 @@ textarea.form-control-lg {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    background-color: #FFF;
+    background-color: #eef4e8;
   }
   .navbar-expand-lg .navbar-nav {
     -webkit-box-orient: horizontal;
@@ -5990,6 +5981,7 @@ textarea.form-control-lg {
 
 .carousel {
   position: relative;
+  margin-top: 60PX;
 }
 
 .carousel.pointer-event {
@@ -6074,7 +6066,7 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15%;
+  width: 5%;
   padding: 0;
   color: #fff;
   text-align: center;
@@ -6141,9 +6133,9 @@ textarea.form-control-lg {
   display: flex;
   justify-content: center;
   padding: 0;
-  margin-right: 15%;
+  margin-right: 5%;
   margin-bottom: 1rem;
-  margin-left: 15%;
+  margin-left: 5%;
   list-style: none;
 }
 .carousel-indicators [data-bs-target] {
@@ -6175,14 +6167,18 @@ textarea.form-control-lg {
 
 .carousel-caption {
   position: absolute;
-  right: 15%;
-  bottom: 1.25rem;
-  left: 15%;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  top:20%;
+  left: 10%;
   color: #fff;
-  text-align: center;
+  text-align: left;
+  width: 25vw;
 }
+@media (max-width: 780px) {
+  .carousel-caption {
+    position: absolute;
+    top:30%;
+  }
+  }
 
 .carousel-dark .carousel-control-prev-icon,
 .carousel-dark .carousel-control-next-icon {
@@ -6365,47 +6361,6 @@ textarea.form-control-lg {
   transform: none;
 }
 
-.placeholder {
-  display: inline-block;
-  min-height: 1em;
-  vertical-align: middle;
-  cursor: wait;
-  background-color: currentColor;
-  opacity: 0.5;
-}
-.placeholder.btn::before {
-  display: inline-block;
-  content: "";
-}
-
-.placeholder-xs {
-  min-height: 0.6em;
-}
-
-.placeholder-sm {
-  min-height: 0.8em;
-}
-
-.placeholder-lg {
-  min-height: 1.2em;
-}
-
-.placeholder-glow .placeholder {
-  -webkit-animation: placeholder-glow 2s ease-in-out infinite;
-  animation: placeholder-glow 2s ease-in-out infinite;
-}
-
-@-webkit-keyframes placeholder-glow {
-  50% {
-    opacity: 0.2;
-  }
-}
-
-@keyframes placeholder-glow {
-  50% {
-    opacity: 0.2;
-  }
-}
 .placeholder-wave {
   -webkit-mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
   mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
@@ -7888,7 +7843,9 @@ textarea.form-control-lg {
 }
 
 .bg-gradient {
-  background-image: var(--bs-gradient) !important;
+  background-image: url("../public/img/banner_tienda.jpg") !important;
+  background-size: cover;
+
 }
 
 .user-select-all {
@@ -11376,5 +11333,10 @@ textarea.form-control-lg {
   right: 0;
   left: 0;
   z-index: 1030;
+}
+
+.jumbotron{
+  padding:10vh;
+  height: 90vh;
 }
 
